@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Барбершоп</title>
   </head>
   <body>
-    <header>
-      <a>
-        <img src="img/index.html/index-logo.svg" width="371" height="155" alt = "Логотип барбершопа Бородинский">
-      </a>
-      <nav>
-        <ul>
+    <header class="mine-header">
+      <nav class="main-nav">
+        <a class="main-header-logo">
+          <img
+            src="img/index.html/index-logo.svg"
+            width="371"
+            height="155"
+            alt="Логотип барбершопа Бородинский"
+          />
+        </a>
+        <ul class="site-navigation">
           <li><a href="#">ИНФОРМАЦИЯ</a></li>
           <li><a href="#">НОВОСТИ</a></li>
           <li><a href="barbershop-price.html">ПРАЙС-ЛИСТ</a></li>
           <li><a href="catalog.html">МАГАЗИН</a></li>
-          <li><a href="#">КОНТАКТЫ</a></li>          
+          <li><a href="#">КОНТАКТЫ</a></li>
         </ul>
-        <ul>
-          <li>
-            <img src="img/index.html/login.svg" width="14" height="14" alt="Иконка входа">
-            <button type="button">ВХОД</button>
+        <ul class="user-navigation">
+          <li class="login-link">
+            <img
+              src="img/index.html/login.svg"
+              width="14"
+              height="14"
+              alt="Иконка входа"
+            />
+            <a class="login-link" href="entrance.html">ВХОД</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-
       <h1>Барбершоп "БОРОДИНСКИЙ"</h1>
 
       <section>
@@ -34,18 +43,25 @@
         <ul>
           <li>
             <h2>БЫСТРО</h2>
-            <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+            <p>
+              МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ —
+              СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!
+            </p>
           </li>
           <li>
             <h2>КРУТО</h2>
-            <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.<br>
-            МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!<br>
-            ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
+            <p>
+              ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.<br />
+              МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!<br />
+              ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
             </p>
           </li>
           <li>
             <h2>ДОРОГО</h2>
-            <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕННЫЙ СТАТУС?</p>
+            <p>
+              НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО.
+              К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕННЫЙ СТАТУС?
+            </p>
           </li>
         </ul>
       </section>
@@ -54,22 +70,33 @@
         <h2>НОВОСТИ</h2>
         <ul>
           <li>
-            <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+            <p>
+              НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ
+              СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
+            </p>
             <time datetime="2019-01-11">11 января</time>
           </li>
           <li>
-            <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+            <p>
+              В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ
+              МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ
+            </p>
             <time datetime="2019-01-18">18 января</time>
           </li>
         </ul>
         <a href="#">ВСЕ НОВОСТИ</a>
-        </section>
+      </section>
 
       <section>
         <h2>ФОТОГАЛЕРЕЯ</h2>
         <figure>
-          <a href="#">
-            <img src="img/index.html/interior.jpg" width = "286" height ="164" alt="Интерьер">
+          <a href="gallery.html">
+            <img
+              src="img/index.html/interior.jpg"
+              width="286"
+              height="164"
+              alt="Интерьер"
+            />
           </a>
         </figure>
         <button type="button">НАЗАД</button>
@@ -79,54 +106,103 @@
       <section>
         <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
         <p>
-          БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-          АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
-          ТЕЛЕФОН: +7 (495) 666-02-66 
+          БАРБЕРШОП «БОРОДИНСКИЙ»<br />
+          АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br />
+          ТЕЛЕФОН: +7 (495) 666-02-66
         </p>
         <p>
-          ВРЕМЯ РАБОТЫ:<br>
-          ПН—ПТ: С 10:00 ДО 22:00<br>
-          СБ—ВС: С 10:00 ДО 19:00 
+          ВРЕМЯ РАБОТЫ:<br />
+          ПН—ПТ: С 10:00 ДО 22:00<br />
+          СБ—ВС: С 10:00 ДО 19:00
         </p>
-        <a href="#">КАК ПРОЕХАТЬ</a>
+        <a href="map.html">КАК ПРОЕХАТЬ</a>
         <a href="#">ОБРАТНАЯ СВЯЗЬ</a>
       </section>
 
       <section>
         <h2>ЗАПИСАТЬСЯ</h2>
         <p>
-          УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
+          УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ
+          БРОНИ
         </p>
-        <!-- Форма -->
+        <form action="https://echo.htmlacademy.ru" method="post"></form>
+        <p>
+          <label for="date-field-id">ДАТА</label>
+          <input
+            id="date-field-id"
+            type="date"
+            name="date"
+            value=""
+            placeholder="2017-10-08"
+          />
+        </p>
+        <p>
+          <label for="time-field-id">ВРЕМЯ</label>
+          <input id="time-field-id" type="time" name="time" value="" placeholder="10:00"/>
+        </p>
+        <p>
+          <label for="name-field-id">ВАШЕ ИМЯ</label>
+          <input
+            id="name-field-id"
+            type="text"
+            name="name"
+            placeholder="Борода"
+          />
+        </p>
+        <p>
+          <label for="phone-field-id">ТЕЛЕФОН</label>
+          <input
+            id="phone-field-id"
+            type="tel"
+            name="phone"
+            placeholder="+7 123 456-78-90"
+          />
+        </p>
+        <button type="submit">Отправить</button>
       </section>
     </main>
 
     <footer>
       <p>
-        БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-        АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-        <a href="#">КАК НАС НАЙТИ?</a><br>
+        БАРБЕРШОП «БОРОДИНСКИЙ»<br />
+        АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br />
+        <a href="map.html">КАК НАС НАЙТИ?</a><br />
         ТЕЛЕФОН: +7 (495) 666-02-66
       </p>
       <div>
-      <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
-      <ul>
-        <li>
-          <a href="#">
-            <img src="img/index.html/vk.svg" width = "27" height ="15" alt="ВКонтакте">
-          </a>
-        </li>
-        <li>
-          <a href="#">
-          <img src="img/index.html/facebook.svg" width = "11" height ="22" alt="Фейсбук"> 
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/index.html/instagram.svg" width = "20" height ="20" alt="Инстаграмм"> 
-          </a>
-        </li>
-      </ul>
+        <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+        <ul>
+          <li>
+            <a href="#">
+              <img
+                src="img/index.html/vk.svg"
+                width="27"
+                height="15"
+                alt="ВКонтакте"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="img/index.html/facebook.svg"
+                width="11"
+                height="22"
+                alt="Фейсбук"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="img/index.html/instagram.svg"
+                width="20"
+                height="20"
+                alt="Инстаграмм"
+              />
+            </a>
+          </li>
+        </ul>
       </div>
       <section>
         <p>
@@ -138,14 +214,46 @@
 
     <section>
       <h2>Личный кабинет</h2>
-      <p>Введите свой логин и пароль.</p>
-      <!-- Форма -->
-      <button type="button">Закрыть</button>
+      <p>Введите пожалуйста свой логин и пароль</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="login-field-id" class="visually hidden">Логин</label>
+          <input
+            id="login-field-id"
+            type="text"
+            name="login"
+            placeholder="ЛОГИН"
+          />
+        </p>
+        <p>
+          <label for="password-field-id" class="visually-hidden">ПАРОЛЬ</label>
+          <input
+            id="password-field-id"
+            type="password"
+            name="password"
+            placeholder="ПАРОЛЬ"
+          />
+        </p>
+        <p>
+          <input id="remember" type="checkbox" checked />
+          <label for="remember">ЗАПОМНИТЕ МЕНЯ</label>
+          <a class="restore" href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+        </p>
+        <button type="submit">ВОЙТИ</button>
+        <button type="button">Закрыть</button>
+      </form>
     </section>
     <section>
       <h2>Как до нас добраться?</h2>
+      <p>
+        <img
+          src="img/map.jpg"
+          width="766"
+          height="560"
+          alt="Офис компании по адресу ул.Большая Конюшенная 19/8, Санкт-Петербург, изображение"
+        />
+      </p>
       <button type="button">Закрыть</button>
     </section>
-
   </body>
 </html>
