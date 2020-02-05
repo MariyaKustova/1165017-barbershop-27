@@ -3,37 +3,37 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Барбершоп</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-
-  <body>
-    <header class="main-header">
-      <nav class="mine-navigation">
-        <a class="main-header-logo" href="index.html">
+  <body class="inner-page">
+    <header class="mine-header">
+      <nav class="main-nav">
+        <a class="main-header-logo">
           <img
-            src="img/catalog.html/logo.svg"
-            width="111"
-            height="24"
-            alt="Логотип Барбершопа Бородинский"
+            src="img/index/index-logo.svg"
+            width="371"
+            height="155"
+            alt="Логотип барбершопа Бородинский"
           />
         </a>
         <ul class="site-navigation">
           <li><a href="#">ИНФОРМАЦИЯ</a></li>
           <li><a href="#">НОВОСТИ</a></li>
-          <li><a href="price.html">ПРАЙС-ЛИСТ</a></li>
-          <li class="site-navigation-current">
-            <a href="catalog.html">МАГАЗИН</a>
-          </li>
+          <li><a href="barbershop-price.html">ПРАЙС-ЛИСТ</a></li>
+          <li><a href="catalog.html">МАГАЗИН</a></li>
           <li><a href="#">КОНТАКТЫ</a></li>
         </ul>
         <ul class="user-navigation">
-          <li>
+          <li class="login-link">
             <img
-              src="img/index.html/login.svg"
+              src="img/index/login.svg"
               width="14"
               height="14"
               alt="Иконка входа"
             />
-            <button type="button">ВХОД</button>
+            <a class="login-link" href="entrance.html">ВХОД</a>
           </li>
         </ul>
       </nav>
@@ -45,13 +45,18 @@
         <li><a href="index.html">ГЛАВНАЯ</a></li>
         <li class="breadcrumbs-current">ПРАЙС-ЛИСТ</li>
       </ul>
-      <h2 class="section-title">ИСТИННО МУЖСКАЯ КЛАССИКА</h2>
+      <div class="heading">
+        <img class="straight" src="#" alt="Декоративная прямая">
+        <h2 class="section-title">ИСТИННО МУЖСКАЯ КЛАССИКА</h2>
+        <img class="straight" src="#" alt="Декоративная прямая">
+      </div>
+      
       <section class="materials-for-work">
         <h3>
           МЫ ИСПОЛЬЗУЕМ ТОЛЬКО<br />
           ЛУЧШИЕ СРЕДСТВА:
         </h3>
-        <ul class="material-List">
+        <ul class="material-list">
           <li>Baxter of California</li>
           <li>Mr Natty</li>
           <li>Suavecito</li>
@@ -64,16 +69,16 @@
           ЦЕНЫ НА УСЛУГИ<br />
           НАШИХ МАСТЕРОВ:
         </h3>
-        <table>
-          <tr>
+        <table class="service-prices">
+          <tr class="service-prices-row">
             <td>СТРИЖКА</td>
             <td>1500 ₽</td>
           </tr>
-          <tr>
+          <tr class="service-prices-row">
             <td>СТРИЖКА БОРОДЫ</td>
             <td>500 ₽</td>
           </tr>
-          <tr>
+          <tr class="service-prices-row">
             <td>НАКРУТКА УСОВ</td>
             <td>350 ₽</td>
           </tr>
@@ -81,6 +86,7 @@
       </section>
 
       <section class="information">
+        <h3>НЕСКОЛЬКО СЛОВ О НАС:</h3>
         <p>
           Наша парикмахерская занимается исключительно мужскими стрижками.
           Стрижка каждого клиента для нас - это уникальная и продуманная до
@@ -94,20 +100,20 @@
         </p>
       </section>
     </main>
-    <footer>
-      <p>
+    <footer class="main-footer">
+      <p class="footer-contacts">
         БАРБЕРШОП «БОРОДИНСКИЙ»<br />
         АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br />
-        <a href="#">КАК НАС НАЙТИ?</a><br />
+        <a href="map.html">КАК НАС НАЙТИ?</a><br />
         ТЕЛЕФОН: +7 (495) 666-02-66
       </p>
-      <div>
-        <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+      <div class="footer-social">
+        <b>ДАВАЙТЕ ДРУЖИТЬ!</b>
         <ul>
           <li>
-            <a href="#">
+            <a class="social-button" href="#">
               <img
-                src="img/index.html/vk.svg"
+                src="img/index/vk.svg"
                 width="27"
                 height="15"
                 alt="ВКонтакте"
@@ -115,9 +121,9 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="social-button" href="#">
               <img
-                src="img/index.html/facebook.svg"
+                src="img/index/facebook.svg"
                 width="11"
                 height="22"
                 alt="Фейсбук"
@@ -125,9 +131,9 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="social-button" href="#">
               <img
-                src="img/index.html/instagram.svg"
+                src="img/index/instagram.svg"
                 width="20"
                 height="20"
                 alt="Инстаграмм"
@@ -136,19 +142,19 @@
           </li>
         </ul>
       </div>
-      <section>
-        <p>РАЗРАБОТАНО:</p>
-        <a href="https://htmlacademy.ru/">html academy</a>
-      </section>
+      <p class="footer-copyright">
+          <b>РАЗРАБОТАНО:</b>
+          <a class="button" href="https://htmlacademy.ru/">html academy</a>
+      </p>
     </footer>
 
-    <section>
+    <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите пожалуйста свой логин и пароль</p>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label for="login-field-id" class="visually hidden">Логин</label>
-          <input
+          <label class="visually-hidden" for="login-field-id">Логин</label>
+          <input class="login-icon-user"
             id="login-field-id"
             type="text"
             name="login"
@@ -156,22 +162,38 @@
           />
         </p>
         <p>
-          <label for="password-field-id" class="visually-hidden">ПАРОЛЬ</label>
-          <input
+          <label  class="visually-hidden" for="password-field-id">ПАРОЛЬ</label>
+          <input  class="login-icon-password"
             id="password-field-id"
             type="password"
             name="password"
             placeholder="ПАРОЛЬ"
           />
         </p>
-        <p>
-          <input id="remember-me" type="checkbox" checked />
-          <label for="remember-me">ЗАПОМНИТЕ МЕНЯ</label>
-          <a href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+        <p class="login-password-info">
+          <label class="login-checkbox">
+          <input type="checkbox" name="remember" class="visually-hidden" checked />
+          <span class="checkbox-indicator"></span>
+          Запомните меня
+          </label>
+          <a class="restore" href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
         </p>
-        <button type="submit">ВОЙТИ</button>
-        <button type="button">Закрыть</button>
+        <button class="button" type="submit">ВОЙТИ</button>
       </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться?</h2>
+      <p>
+        <img
+          src="img/map.jpg"
+          width="766"
+          height="560"
+          alt="Офис компании по адресу ул.Большая Конюшенная 19/8, Санкт-Петербург, изображение"
+        />
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
