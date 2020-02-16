@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Барбершоп</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
 
   <body class="inner-page">
     <header class="main-header">
-      <nav class="main-nav">
+      <nav class="main-nav container">
         <a class="main-header-logo" href="index.html">
           <img
             src="img/catalog/logo.svg"
@@ -22,9 +25,9 @@
         <ul class="site-navigation">
           <li><a href="#">ИНФОРМАЦИЯ</a></li>
           <li><a href="#">НОВОСТИ</a></li>
-          <li><a href="price.html">ПРАЙС-ЛИСТ</a></li>
+          <li><a href="barbershop-price.html">ПРАЙС-ЛИСТ</a></li>
           <li class="site-navigation-current">
-            <a href="catalog.html">МАГАЗИН</a>
+            <a>МАГАЗИН</a>
           </li>
           <li><a href="#">КОНТАКТЫ</a></li>
         </ul>
@@ -43,7 +46,7 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main class="main-container">
       <h1 class="pige-title">НАБОР ДЛЯ ПУТЕШЕСТВИЙ «Baxter of California»</h1>
       <ul class="breadcrumbs">
         <li><a href="index.html">ГЛАВНАЯ</a></li>
@@ -54,124 +57,138 @@
         </li>
       </ul>
 
-      <section class="product-pfotos">
-        <h2 class="visually-hidden">Изображение товара</h2>
-        <p class="product-foto-full">
-          <img
-            src="img/catalog-item/photo-big.jpg"
-            width="460"
-            height="498"
-            alt="Фото всего набора"
-          />
-        </p>
-        <ul class="product-foto-preview">
-          <li>
+      <div class="main-content">
+        <section class="product-pfotos">
+          <h2 class="visually-hidden">Изображение товара</h2>
+          <p class="product-foto-full">
             <img
-              src="img/catalog-item/photo-2.jpg"
-              width="140"
-              height="149"
-              alt="Фото в анфас"
+              src="img/catalog-item/photo-big.jpg"
+              width="460"
+              height="498"
+              alt="Фото всего набора"
             />
-          </li>
-          <li>
-            <img
-              src="img/catalog-item/photo-3.jpg"
-              width="140"
-              height="149"
-              alt="Фото в профиль"
-            />
-          </li>
-          <li>
-            <img
-              src="img/catalog-item/photo-small.jpg"
-              width="140"
-              height="149"
-              alt="Фото отдельной части"
-            />
-          </li>
-        </ul>
-      </section>
-      <section class="product-info">
-        <h2 class="visually-hidden">Описание товара</h2>
-        <p class="product-availability">Eсть в наличии</p>
-        <p class="article-product">Артикул: dexter-ae</p>
-        <p class="product-description">
-          Travel Kit – необходимый аксессуар во время любого путешествия. В
-          аккуратной кожаной сумке находится все, что нужно для бритья и ухода
-          за кожей во время рабочей поездки или отдыха: средство для умывания,
-          увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор
-          также может стать отличным подарком.
-        </p>
-        <p class="catalog-item-price">
-          <b>2 900 ₽</b>
-          <a class="button" href="#">КУПИТЬ</a>
-        </p>
-        <h3>В набор входят:</h3>
-        <ul class="set-list">
-          <li>Средство для умывания (50 мл)</li>
-          <li>Увлажняющий крем (50 мл)</li>
-          <li>Крем для бритья (50 мл)</li>
-          <li>Крем после бритья, шампунь (50 мл)</li>
-          <li>Удобная кожаная косметичка</li>
-        </ul>
-      </section>
+          </p>
+          <ul class="product-foto-preview">
+            <li>
+              <img
+                src="img/catalog-item/photo-2.jpg"
+                width="140"
+                height="149"
+                alt="Фото в анфас"
+              />
+            </li>
+            <li>
+              <img
+                src="img/catalog-item/photo-3.jpg"
+                width="140"
+                height="149"
+                alt="Фото в профиль"
+              />
+            </li>
+            <li>
+              <img
+                src="img/catalog-item/photo-small.jpg"
+                width="140"
+                height="149"
+                alt="Фото отдельной части"
+              />
+            </li>
+          </ul>
+        </section>
+
+        <section class="product-info">
+          <div class="product-description">
+            <h2 class="visually-hidden">Описание товара</h2>
+            <span>Eсть в наличии</span>
+            <span class="article-product">Артикул: dexter-ae</span>
+            <p>
+              Travel Kit – необходимый аксессуар во время любого путешествия. В
+              аккуратной кожаной сумке находится все, что нужно для бритья и
+              ухода за кожей во время рабочей поездки или отдыха: средство для
+              умывания, увлажняющий крем, крем для бритья, крем после бритья,
+              шампунь. Набор также может стать отличным подарком.
+            </p>
+            <p class="catalog-item-price">
+              <b>2 900 ₽</b>
+              <a class="button" href="#">КУПИТЬ</a>
+            </p>
+          </div>
+          <div class="set-composition">
+            <h3>В набор входят:</h3>
+            <ul class="set-list">
+              <li>Средство для умывания (50 мл)</li>
+              <li>Увлажняющий крем (50 мл)</li>
+              <li>Крем для бритья (50 мл)</li>
+              <li>Крем после бритья, шампунь (50 мл)</li>
+              <li>Удобная кожаная косметичка</li>
+            </ul>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="main-footer">
-      <p class="footer-contacts">
-        БАРБЕРШОП «БОРОДИНСКИЙ»<br />
-        АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br />
-        <a href="map.html">КАК НАС НАЙТИ?</a><br />
-        ТЕЛЕФОН: +7 (495) 666-02-66
-      </p>
-      <div class="footer-social">
-        <b>ДАВАЙТЕ ДРУЖИТЬ!</b>
-        <ul>
-          <li>
-            <a class="social-button" href="#">
-              <img
-                src="img/index/vk.svg"
-                width="27"
-                height="15"
-                alt="ВКонтакте"
-              />
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">
-              <img
-                src="img/index/facebook.svg"
-                width="11"
-                height="22"
-                alt="Фейсбук"
-              />
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">
-              <img
-                src="img/index/instagram.svg"
-                width="20"
-                height="20"
-                alt="Инстаграмм"
-              />
-            </a>
-          </li>
-        </ul>
-      </div>
-      <p class="footer-copyright">
+      <div class="footer-container">
+        <p class="footer-contacts">
+          БАРБЕРШОП «БОРОДИНСКИЙ»<br />
+          АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br />
+          <a href="map.html">КАК НАС НАЙТИ?</a><br />
+          ТЕЛЕФОН: +7 (495) 666-02-66
+        </p>
+        <div class="footer-social">
+          <b>ДАВАЙТЕ ДРУЖИТЬ!</b>
+          <ul class="social-contacts">
+            <li>
+              <a class="social-button" href="#">
+                <img
+                  src="img/index/vk.svg"
+                  width="27"
+                  height="15"
+                  alt="ВКонтакте"
+                />
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <img
+                  src="img/index/facebook.svg"
+                  width="11"
+                  height="22"
+                  alt="Фейсбук"
+                />
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <img
+                  src="img/index/instagram.svg"
+                  width="20"
+                  height="20"
+                  alt="Инстаграмм"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer-copyright">
           <b>РАЗРАБОТАНО:</b>
           <a class="button" href="https://htmlacademy.ru/">html academy</a>
-      </p>
+        </p>
+      </div>
     </footer>
 
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите пожалуйста свой логин и пароль</p>
-      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <form
+        class="login-form"
+        action="https://echo.htmlacademy.ru"
+        method="post"
+      >
         <p>
           <label class="visually-hidden" for="login-field-id">Логин</label>
-          <input class="login-icon-user"
+          <input
+            class="login-icon-user"
             id="login-field-id"
             type="text"
             name="login"
@@ -179,8 +196,9 @@
           />
         </p>
         <p>
-          <label  class="visually-hidden" for="password-field-id">ПАРОЛЬ</label>
-          <input  class="login-icon-password"
+          <label class="visually-hidden" for="password-field-id">ПАРОЛЬ</label>
+          <input
+            class="login-icon-password"
             id="password-field-id"
             type="password"
             name="password"
@@ -189,9 +207,14 @@
         </p>
         <p class="login-password-info">
           <label class="login-checkbox">
-          <input type="checkbox" name="remember" class="visually-hidden" checked />
-          <span class="checkbox-indicator"></span>
-          Запомните меня
+            <input
+              type="checkbox"
+              name="remember"
+              class="visually-hidden"
+              checked
+            />
+            <span class="checkbox-indicator"></span>
+            Запомните меня
           </label>
           <a class="restore" href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
         </p>
