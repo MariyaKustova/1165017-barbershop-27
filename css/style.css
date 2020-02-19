@@ -62,9 +62,7 @@ a.button.disabled,
   background-color: #000000;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input [type="checkbox"].visually-hidden,
-input [type="radio"].visually-hidden {
+.visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -75,7 +73,6 @@ input [type="radio"].visually-hidden {
 
   white-space: nowrap;
   clip-path: inset(100%);
-  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -314,7 +311,7 @@ input [type="radio"].visually-hidden {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 141px;
-} 
+}
 
 .login-password-info {
   display: flex;
@@ -550,17 +547,6 @@ input [type="radio"].visually-hidden {
   display: block;
   width: 100%;
   margin: 0;
-}
-
-/* Стили для модальных окон */
-
-.modal-login {
-  width: 460px;
-  padding-top: 50px;
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-bottom: 58px;
-  margin: 0 auto;
 }
 
 /* Стили для каталога */
@@ -818,7 +804,7 @@ li.breadcrumbs-current {
 
 .set-list li {
   position: relative;
-  padding-left:  20px;
+  padding-left: 20px;
 }
 
 .set-list li::before {
@@ -899,7 +885,7 @@ li.breadcrumbs-current {
 main-content-barbershop-price + h3 {
   font-size: 24px;
   line-height: 30px;
-  margin: 0 0 39px
+  margin: 0 0 39px;
 }
 
 .information h3 {
@@ -931,7 +917,6 @@ main-content-barbershop-price + h3 {
   left: 0;
   transform: rotate(45deg);
 }
-
 
 .service-prices {
   border-collapse: collapse;
@@ -1050,17 +1035,35 @@ main-content-barbershop-price + h3 {
 }
 
 /* Стили для модальных окон */
+
 .modal {
+  position: fixed;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  
   color: #000000;
 
-  box-sizing: border-box;
+  background-color: #f8f3f0;
+  background-image: url("../img/index/index-columns.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+  box-shadow: 0px 30px 50px 0 rgba(0, 1, 1, 0.75);
 }
 
 .modal-login {
-    background-color: #f8f3f0;
-    background-image: url("../img/index/index-columns.jpg");
-    background-position: 0 0;
-    background-repeat: repeat;
+  width: 460px;
+  padding: 50px 80px;
+  margin: 0 auto;
+
+  box-sizing: border-box;
+
+  background-color: #f8f3f0;
+  background-image: url("../img/index/index-columns.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+
+  display: none;
 }
 
 .modal-login h2 {
@@ -1102,25 +1105,57 @@ main-content-barbershop-price + h3 {
   position: relative;
 }
 
-/* .login-icon-user::after {
-  content: "";
+.login-checkbox {
+  padding-left: 32px;
 
-  position: absolute;
-  top: 15px;
-  right: 15px;
-
-  background-image: url("../img/general/user.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
-  width: 13px;
-  height: 13px;
+  position: relative;
+  cursor: pointer;
 }
 
 .login-checkbox:hover,
 .login-checkbox:focus {
+  color: #663d15;
+}
+
+.login-checkbox input[type="checkbox"]+.checkbox-indicator {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000101;
+
+  position: absolute;
+  left: 0px;
+}
+
+.login-checkbox input[type="checkbox"]:focus+.checkbox-indicator {
   border-color: #663d15;
-} */
+  outline-width: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::after {
+  content: "";
+
+  width: 18px;
+  height: 2px;
+  background-color: #000101;
+
+  position: absolute;
+  top: 9px;
+  left: 1px;
+}
+
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::before{
+  content: "";
+  
+  transform: rotate(-45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::after{
+  content: "";
+  
+  transform: rotate(45deg);
+}
 
 .restore {
   color: #000000;
@@ -1137,14 +1172,57 @@ main-content-barbershop-price + h3 {
   width: 100%;
 }
 
+.modal-close {
+  width: 19px;
+  height: 19px;
+
+  position: absolute;
+  top: 0;
+  right: -33px;
+
+  background-color: transparent;
+
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  width: 23px;
+  height: 3px;
+
+  background-color: #d0d0d0;
+
+  position: absolute;
+  top: 8px;
+  left: -2px;
+}
+
+.modal-close::before {
+  content: "";
+  
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  content: "";
+  
+  transform: rotate(-45deg);
+}
+
 .modal-map {
-    margin: 0 auto;
-    width: 780px;
-    height: 574px;
-    box-shadow: 0px 30px 50px 0 rgba(0, 1, 1, 0.75);
-    border: 7px solid #ffffff;
+  top: 120px;
+  
+  margin: 0 auto;
+  width: 766px;
+  height: 574px;
+  box-shadow: 0px 30px 50px 0 rgba(0, 1, 1, 0.75);
+  border: 7px solid #ffffff;
+
+  display: none;
 }
 
 .modal-map p {
-    margin: 0;
+  margin: 0;
 }
