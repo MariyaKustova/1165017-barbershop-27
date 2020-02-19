@@ -957,7 +957,7 @@ li.breadcrumbs-current {
 
 .additional-information p {
   width: 379px;
-  margin: 0;
+  margin: 0 0 14px;
 }
 
 .additional-information p:first-child {
