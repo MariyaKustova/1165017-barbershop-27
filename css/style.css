@@ -665,6 +665,93 @@ li.breadcrumbs-current {
   margin-bottom: 17px;
 }
 
+.manufacturer,
+.product-group {
+  padding-left: 42px;
+
+  position: relative;
+}
+
+label input[type="checkbox"]+.checkbox-indicator {
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  border: 2px solid #000101;
+
+  position: absolute;
+  top: -3px;
+  left: 0;
+
+  cursor: pointer;
+}
+
+.manufacturer label:hover,
+.product-group label:hover {
+  color: #663d15;
+  cursor: pointer;
+}
+
+label input[type="checkbox"]:disabled~.name-manufacturer,
+label input[type="radio"]:disabled~.name-product-group {
+  color: #aba9a7;
+}
+
+label input[type="checkbox"]:disabled+.checkbox-indicator {
+  border-color: #aba9a7;
+}
+
+label input[type="checkbox"]:checked+.checkbox-indicator::before,
+label input[type="checkbox"]:checked+.checkbox-indicator::after {
+  content: "";
+
+  width: 19px;
+  height: 2px;
+
+  background-color: #000101;
+  position: absolute;
+  top: 9px;
+  left: 1px;
+}
+
+label input[type="checkbox"]:checked+.checkbox-indicator::before{
+  transform: rotate(45deg);
+}
+
+label input[type="checkbox"]:checked+.checkbox-indicator::after{
+  transform: rotate(-45deg);
+}
+
+label input[type="radio"]+.radio-indicator {
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  border: 2px solid #000101;
+  border-radius: 50%;
+
+  position: absolute;
+  top: -1px;
+  left: 0;
+
+  cursor: pointer;
+}
+
+label input[type="radio"]:disabled+.radio-indicator {
+  border-color: #aba9a7;
+}
+
+label input[type="radio"]:checked+.radio-indicator::before {
+  content: "";
+
+  border: 4px solid #000101;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+
 .catalog-item {
   background-color: #f8f8f8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
