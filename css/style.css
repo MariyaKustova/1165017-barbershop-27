@@ -300,6 +300,8 @@ a.button.disabled,
 
 .additional-information {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .social-contacts {
@@ -853,17 +855,7 @@ li.breadcrumbs-current {
 
 /* Стили для Barbershop-price */
 
-.heading::before {
-  content: "";
-  width: 160px;
-  height: 2px;
-  background-color: #000000;
-
-  position: relative;
-  top: 25px;
-  margin-right: 26px;
-}
-
+.heading::before,
 .heading::after {
   content: "";
   width: 160px;
@@ -872,6 +864,19 @@ li.breadcrumbs-current {
 
   position: relative;
   top: 25px;
+}
+
+.heading::before {
+  content: "";
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-right: 26px;
+}
+
+.heading::after {
+  content: "";
+  flex-grow: 1;
+  flex-shrink: 0;
   margin-left: 26px;
 }
 
@@ -888,7 +893,7 @@ li.breadcrumbs-current {
 }
 
 .main-content-barbershop-price h3,
-main-content-barbershop-price + h3 {
+.additional-information h3 {
   font-size: 24px;
   line-height: 30px;
   margin: 0 0 39px;
@@ -946,13 +951,17 @@ main-content-barbershop-price + h3 {
   min-height: 213px;
 }
 
+.additional-information h3 {
+  width: 100%;
+}
+
 .additional-information p {
   width: 379px;
-  min-height: 84px;
+  margin: 0;
 }
 
 .additional-information p:first-child {
-  margin-right: 98px;
+  margin-right: 100px;
 }
 
 /* Стили для подвала */
@@ -1069,7 +1078,7 @@ main-content-barbershop-price + h3 {
   background-position: 0 0;
   background-repeat: repeat;
 
-  /* display: none; */
+  display: none;
 }
 
 .modal-login h2 {
@@ -1101,14 +1110,43 @@ main-content-barbershop-price + h3 {
   padding-bottom: 7px;
   padding-left: 17px;
   padding-right: 28px;
+  position: relative;
+  padding-right: 30px;
+  box-sizing: border-box;
 }
 
 .login-form input:focus {
   border-color: #663d15;
 }
 
-.login-icon-user {
+.login-form p {
   position: relative;
+}
+
+.login-form p:first-child::after {
+  content: "";
+
+  background-image: url("../img/general/user.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 14px;
+  right: 20px;
+}
+
+.login-form p:nth-child(2)::after {
+  content: "";
+
+  background-image: url("../img/general/lock.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 15px;
+  position: absolute;
+  top: 14px;
+  right: 20px;
 }
 
 .login-checkbox {
@@ -1120,7 +1158,7 @@ main-content-barbershop-price + h3 {
 
 .login-checkbox:hover,
 .login-checkbox:focus {
-  color: #663d15;
+  border-color: #663d15;
 }
 
 .login-checkbox input[type="checkbox"]+.checkbox-indicator {
